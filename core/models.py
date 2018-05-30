@@ -13,6 +13,7 @@ class Noticia(models.Model):
     comentarios = models.ManyToManyField(Comentario)
     avaliacoes = models.ManyToManyField(Avaliacao)
     enderecos = models.ForeignKey(Endereco, on_delete=models.CASCADE)
+    foto = models.ImageField(upload_to='noticias', null=True, blank=True)
 
     def __str__(self):
         return self.nome

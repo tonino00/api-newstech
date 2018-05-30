@@ -24,7 +24,7 @@ from comentarios.api.viewsets import ComentarioViewSet
 from avaliacoes.api.viewsets import AvaliacaoViewSet
 
 router = routers.DefaultRouter()
-router.register(r'noticia', NoticiaViewSet)
+router.register(r'noticia', NoticiaViewSet, base_name='Noticia')
 router.register(r'eventos', EventoViewSet)
 router.register(r'enderecos', EnderecoViewSet)
 router.register(r'comentarios', ComentarioViewSet)

@@ -7,5 +7,8 @@ class NoticiaViewSet(ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
     """
-    queryset = Noticia.objects.all()
+
     serializer_class = NoticiaSerializer
+
+    def get_queryset(self):
+        return Noticia.objects.filter(aprovado=True)

@@ -1,4 +1,4 @@
-#!/home/toninos/code/api-newstech/venv/bin/python3
+#!/Users/mambo/code/api-newstech/venv/bin/python
 
 # -*- coding: utf-8 -*-
 import re

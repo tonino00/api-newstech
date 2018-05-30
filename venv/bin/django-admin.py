@@ -1,4 +1,4 @@
-#!/home/toninos/code/api-newstech/venv/bin/python3
+#!/Users/mambo/code/api-newstech/venv/bin/python
 from django.core import management
 
 if __name__ == "__main__":
